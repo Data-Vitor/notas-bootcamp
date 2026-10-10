@@ -1,3 +1,12 @@
+# Projetos e notas do bootcamp Santander/DIO
+
+| Entrega | Conteúdo |
+|---|---|
+| [Dashboard de vendas e lucro — Power BI](projetos/power-bi/dashboard-vendas/) | Três páginas, relatório PBIX, PowerPoint, base de dados e documentação. |
+| [Caderno temático — NotebookLM](#ferramentas-estatísticas-para-trabalhar-com-dados-de-verdade-guia-de-fundamentos) | Curadoria de fontes, prompts e guia de fundamentos estatísticos, documentados abaixo. |
+
+---
+
 # Ferramentas Estatísticas para Trabalhar com Dados de Verdade (Guia de Fundamentos)
 
 Desafio de projeto do Bootcamp Santander/DIO: "Treinando uma IA de Aprendizagem: Explore o Poder do NotebookLM".
@@ -86,3 +95,4 @@ Para revisão futura do tema:
 ## Ferramentas Usadas
 
 NotebookLM (Google), com as 3 fontes listadas acima.
+

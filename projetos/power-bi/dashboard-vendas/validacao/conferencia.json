@@ -1,0 +1,28 @@
+{
+  "fonte": "Financial Sample.xlsx",
+  "linhas": 700,
+  "colunas_originais": 16,
+  "valores_nulos": 0,
+  "inicio": "2013-09-01",
+  "fim": "2014-12-01",
+  "totais_sem_filtro": {
+    "Sales": "118726350.26",
+    "Units Sold": "1125806.00",
+    "Profit": "16893702.26",
+    "Gross Sales": "127931598.50",
+    "Discounts": "9205248.24",
+    "COGS": "101832648.00"
+  },
+  "lucro_enterprise": "-614545.625",
+  "paginas_relatorio": [
+    "01 - Vendas por produto",
+    "02 - Países e lucro",
+    "03 - Distribuição geográfica"
+  ],
+  "visuais_azure_maps": 2,
+  "unidades_vendidas_em_tooltip_do_mapa_de_vendas": true,
+  "slides_powerpoint": 4,
+  "arquivos_zip_sem_erro_crc": true,
+  "limites_visuais_verificados": true,
+  "metodo": "Conferencia independente da base com openpyxl; leitura das definicoes PBIR do PBIX; CRC e XML do PPTX; revisao visual das paginas exportadas. Os valores apresentados nos visuais podem ser arredondados."
+}
