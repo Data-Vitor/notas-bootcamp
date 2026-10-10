@@ -1,0 +1,4 @@
+"Check_name","Result"
+"employee_without_manager","1"
+"department_without_manager","0"
+"works_on_negative_hours","0"

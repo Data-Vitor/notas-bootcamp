@@ -2,6 +2,7 @@
 
 | Entrega | Conteúdo |
 |---|---|
+| [Processamento e transformação de dados — MySQL e Power BI](projetos/power-bi/processamento-dados-company/) | SQL corrigido, transformações no Power Query, checagens de qualidade, relatório publicado e base auditável. |
 | [Relatório gerencial de vendas — Power BI](projetos/power-bi/relatorio-gerencial-vendas/) | Duas páginas, indicadores, troca de visuais, navegação, relatório PBIX e base Financials. |
 | [Dashboard de vendas e lucro — Power BI](projetos/power-bi/dashboard-vendas/) | Três páginas, relatório PBIX, PowerPoint, base de dados e documentação. |
 | [Caderno temático — NotebookLM](#ferramentas-estatísticas-para-trabalhar-com-dados-de-verdade-guia-de-fundamentos) | Curadoria de fontes, prompts e guia de fundamentos estatísticos, documentados abaixo. |
