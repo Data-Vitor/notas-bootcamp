@@ -2,6 +2,7 @@
 
 | Entrega | Conteúdo |
 |---|---|
+| [Star schema de professores — Power BI](projetos/power-bi/star-schema-professores/) | Modelo dimensional com uma tabela fato, cinco dimensões, relacionamentos 1:N, arquivo PBIX, dados de exemplo, SQL, DAX e documentação. |
 | [Processamento e transformação de dados — MySQL e Power BI](projetos/power-bi/processamento-dados-company/) | SQL corrigido, transformações no Power Query, checagens de qualidade, relatório publicado e base auditável. |
 | [Relatório gerencial de vendas — Power BI](projetos/power-bi/relatorio-gerencial-vendas/) | Duas páginas, indicadores, troca de visuais, navegação, relatório PBIX e base Financials. |
 | [Dashboard de vendas e lucro — Power BI](projetos/power-bi/dashboard-vendas/) | Três páginas, relatório PBIX, PowerPoint, base de dados e documentação. |

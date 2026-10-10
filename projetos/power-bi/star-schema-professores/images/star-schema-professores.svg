@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900">
+  <rect width="1400" height="900" fill="#f6f8fb"/>
+  <text x="70" y="62" font-family="Segoe UI,Arial" font-size="32" font-weight="700" fill="#23395d">Star Schema de Professores</text>
+  <text x="70" y="96" font-family="Segoe UI,Arial" font-size="17" fill="#52657d">Grão: uma oferta de disciplina por professor, curso, departamento e data</text>
+
+  <g stroke="#9aa9bb" stroke-width="4" fill="none">
+    <path d="M700 370 L700 270"/><path d="M580 470 L390 300"/><path d="M820 470 L1010 300"/>
+    <path d="M580 590 L390 735"/><path d="M820 590 L1010 735"/>
+  </g>
+
+  <g font-family="Segoe UI,Arial">
+    <g transform="translate(480 370)">
+      <rect width="440" height="250" rx="16" fill="#8b3a3a"/>
+      <text x="24" y="42" font-size="25" font-weight="700" fill="#fff">F_OfertaProfessor</text>
+      <line x1="20" y1="58" x2="420" y2="58" stroke="#d8aaaa"/>
+      <text x="24" y="88" font-size="17" fill="#fff">PK OfertaKey</text>
+      <text x="24" y="118" font-size="17" fill="#fff">FK ProfessorKey · DepartamentoKey</text>
+      <text x="24" y="148" font-size="17" fill="#fff">FK CursoKey · DisciplinaKey · DataKey</text>
+      <text x="24" y="188" font-size="17" fill="#fff">CargaHoraria · NumeroTurmas</text>
+      <text x="24" y="218" font-size="17" fill="#fff">AlunosMatriculados</text>
+    </g>
+
+    <g transform="translate(480 135)">
+      <rect width="440" height="135" rx="14" fill="#315c83"/>
+      <text x="22" y="38" font-size="23" font-weight="700" fill="#fff">D_Calendario</text>
+      <text x="22" y="76" font-size="16" fill="#fff">PK DataKey · Data · Ano · Semestre</text>
+      <text x="22" y="105" font-size="16" fill="#fff">MesNumero · Mes · AnoMes</text>
+    </g>
+
+    <g transform="translate(70 175)">
+      <rect width="360" height="160" rx="14" fill="#315c83"/>
+      <text x="22" y="40" font-size="23" font-weight="700" fill="#fff">D_Professor</text>
+      <text x="22" y="78" font-size="16" fill="#fff">PK ProfessorKey · ProfessorID</text>
+      <text x="22" y="108" font-size="16" fill="#fff">ProfessorNome · Titulacao</text>
+      <text x="22" y="138" font-size="16" fill="#fff">Coordenador</text>
+    </g>
+
+    <g transform="translate(970 175)">
+      <rect width="360" height="160" rx="14" fill="#315c83"/>
+      <text x="22" y="40" font-size="23" font-weight="700" fill="#fff">D_Departamento</text>
+      <text x="22" y="78" font-size="16" fill="#fff">PK DepartamentoKey</text>
+      <text x="22" y="108" font-size="16" fill="#fff">DepartamentoID · Nome</text>
+      <text x="22" y="138" font-size="16" fill="#fff">Campus</text>
+    </g>
+
+    <g transform="translate(70 680)">
+      <rect width="360" height="150" rx="14" fill="#315c83"/>
+      <text x="22" y="40" font-size="23" font-weight="700" fill="#fff">D_Curso</text>
+      <text x="22" y="78" font-size="16" fill="#fff">PK CursoKey · CursoID</text>
+      <text x="22" y="108" font-size="16" fill="#fff">CursoNome · Nivel</text>
+    </g>
+
+    <g transform="translate(970 680)">
+      <rect width="360" height="150" rx="14" fill="#315c83"/>
+      <text x="22" y="40" font-size="23" font-weight="700" fill="#fff">D_Disciplina</text>
+      <text x="22" y="78" font-size="16" fill="#fff">PK DisciplinaKey · DisciplinaID</text>
+      <text x="22" y="108" font-size="16" fill="#fff">DisciplinaNome · AreaConhecimento</text>
+    </g>
+  </g>
+</svg>

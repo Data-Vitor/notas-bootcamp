@@ -1,0 +1,6 @@
+ProfessorKey,ProfessorID,ProfessorNome,Titulacao,Coordenador
+1,101,Ana Souza,Doutorado,Sim
+2,102,Bruno Lima,Mestrado,Nao
+3,103,Carla Mendes,Doutorado,Sim
+4,104,Diego Rocha,Mestrado,Nao
+5,105,Elisa Campos,Doutorado,Nao

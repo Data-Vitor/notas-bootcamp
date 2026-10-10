@@ -1,0 +1,18 @@
+Total Ofertas = COUNTROWS(F_OfertaProfessor)
+
+Carga Horaria Total = SUM(F_OfertaProfessor[CargaHoraria])
+
+Total Turmas = SUM(F_OfertaProfessor[NumeroTurmas])
+
+Alunos Matriculados = SUM(F_OfertaProfessor[AlunosMatriculados])
+
+Media Alunos por Turma =
+DIVIDE([Alunos Matriculados], [Total Turmas])
+
+Professores Ativos = DISTINCTCOUNT(F_OfertaProfessor[ProfessorKey])
+
+Carga Horaria Ano Anterior =
+CALCULATE(
+    [Carga Horaria Total],
+    SAMEPERIODLASTYEAR(D_Calendario[Data])
+)
