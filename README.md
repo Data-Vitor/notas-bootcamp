@@ -2,6 +2,7 @@
 
 | Entrega | Conteúdo |
 |---|---|
+| [Relatório gerencial de vendas — Power BI](projetos/power-bi/relatorio-gerencial-vendas/) | Duas páginas, indicadores, troca de visuais, navegação, relatório PBIX e base Financials. |
 | [Dashboard de vendas e lucro — Power BI](projetos/power-bi/dashboard-vendas/) | Três páginas, relatório PBIX, PowerPoint, base de dados e documentação. |
 | [Caderno temático — NotebookLM](#ferramentas-estatísticas-para-trabalhar-com-dados-de-verdade-guia-de-fundamentos) | Curadoria de fontes, prompts e guia de fundamentos estatísticos, documentados abaixo. |
 
@@ -95,4 +96,3 @@ Para revisão futura do tema:
 ## Ferramentas Usadas
 
 NotebookLM (Google), com as 3 fontes listadas acima.
-
