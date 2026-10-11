@@ -8,6 +8,7 @@
 | [Relatório gerencial de vendas — Power BI](projetos/power-bi/relatorio-gerencial-vendas/) | Duas páginas, indicadores, troca de visuais, navegação, relatório PBIX e base Financials. |
 | [Dashboard de vendas e lucro — Power BI](projetos/power-bi/dashboard-vendas/) | Três páginas, relatório PBIX, PowerPoint, base de dados e documentação. |
 | [Relatório financeiro com foco em experiência do usuário — Power BI](projetos/power-bi/relatorio-experiencia-usuario/) | Três páginas, menu de navegação com estados de focalizar e selecionado, segmentadores, proporção áurea, PBIX, base e validação. |
+| [Relatório estatístico com foco em experiência do usuário (Power BI)](projetos/power-bi/relatorio-estatistico-ux/) | Três páginas com média, mediana, desvio padrão, gráfico de controle, Z-score, correlação e tendência, navegação com estados, medidas DAX, PBIX e validação. |
 | [Caderno temático — NotebookLM](#ferramentas-estatísticas-para-trabalhar-com-dados-de-verdade-guia-de-fundamentos) | Curadoria de fontes, prompts e guia de fundamentos estatísticos, documentados abaixo. |
 
 ---

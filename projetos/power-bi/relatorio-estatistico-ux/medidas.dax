@@ -1,0 +1,50 @@
+// Medidas criadas na tabela financials. Todas estão no PBIX.
+// Média, mediana e desvio padrão são calculados sobre o total de vendas de cada mês (16 meses).
+
+Média Mensal =
+AVERAGEX ( VALUES ( financials[Date] ), CALCULATE ( SUM ( financials[ Sales] ) ) )
+
+Mediana Mensal =
+MEDIANX ( VALUES ( financials[Date] ), CALCULATE ( SUM ( financials[ Sales] ) ) )
+
+Desvio Padrão Mensal =
+STDEVX.S ( VALUES ( financials[Date] ), CALCULATE ( SUM ( financials[ Sales] ) ) )
+
+Coef. de Variação =
+DIVIDE ( [Desvio Padrão Mensal], [Média Mensal] )
+
+Média de Referência =
+CALCULATE ( [Média Mensal], ALLSELECTED ( financials[Date] ) )
+
+Limite Superior =
+[Média de Referência] + 2 * CALCULATE ( [Desvio Padrão Mensal], ALLSELECTED ( financials[Date] ) )
+
+Limite Inferior =
+[Média de Referência] - 2 * CALCULATE ( [Desvio Padrão Mensal], ALLSELECTED ( financials[Date] ) )
+
+Z-score de Vendas =
+DIVIDE (
+    SUM ( financials[ Sales] ) - [Média de Referência],
+    CALCULATE ( [Desvio Padrão Mensal], ALLSELECTED ( financials[Date] ) )
+)
+
+Meses Atípicos =
+COUNTROWS ( FILTER ( VALUES ( financials[Date] ), ABS ( [Z-score de Vendas] ) > 2 ) )
+
+Correlação Unidades x Lucro =
+VAR t =
+    ADDCOLUMNS (
+        VALUES ( financials[Date] ),
+        "@x", CALCULATE ( SUM ( financials[Units Sold] ) ),
+        "@y", CALCULATE ( SUM ( financials[Profit] ) )
+    )
+VAR mx = AVERAGEX ( t, [@x] )
+VAR my = AVERAGEX ( t, [@y] )
+RETURN
+    DIVIDE (
+        SUMX ( t, ( [@x] - mx ) * ( [@y] - my ) ),
+        SQRT ( SUMX ( t, ( [@x] - mx ) ^ 2 ) * SUMX ( t, ( [@y] - my ) ^ 2 ) )
+    )
+
+Margem de Lucro =
+DIVIDE ( SUM ( financials[Profit] ), SUM ( financials[ Sales] ) )
