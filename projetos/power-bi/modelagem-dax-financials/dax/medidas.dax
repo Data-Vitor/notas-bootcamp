@@ -1,0 +1,22 @@
+Total Vendas = SUM ( F_Vendas[Sales] )
+
+Total Lucro = SUM ( F_Vendas[Profit] )
+
+Margem de Lucro = DIVIDE ( [Total Lucro], [Total Vendas], 0 )
+
+Unidades Vendidas = SUM ( F_Vendas[Units_Sold] )
+
+Preco Medio = AVERAGE ( F_Vendas[Sale_Price] )
+
+Vendas Ano Anterior =
+CALCULATE (
+    [Total Vendas],
+    SAMEPERIODLASTYEAR ( D_Calendario[Date] )
+)
+
+Variacao Anual =
+DIVIDE (
+    [Total Vendas] - [Vendas Ano Anterior],
+    [Vendas Ano Anterior],
+    0
+)

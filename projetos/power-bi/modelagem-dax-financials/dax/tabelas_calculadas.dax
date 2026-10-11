@@ -1,0 +1,72 @@
+-- Tabelas calculadas usadas no modelo publicado.
+
+D_Produtos =
+VAR Produtos = SUMMARIZE ( Financials_origem, Financials_origem[Product] )
+RETURN
+    ADDCOLUMNS (
+        Produtos,
+        "ID_Produto", RANKX ( Produtos, [Product],, ASC, DENSE ),
+        "Media_Unidades_Vendidas", CALCULATE ( AVERAGEX ( Financials_origem, VALUE ( Financials_origem[Units Sold] ) ) ),
+        "Media_Valor_Vendas", CALCULATE ( AVERAGEX ( Financials_origem, VALUE ( Financials_origem[ Sales] ) ) ),
+        "Mediana_Valor_Vendas", CALCULATE ( MEDIANX ( Financials_origem, VALUE ( Financials_origem[ Sales] ) ) ),
+        "Max_Valor_Vendas", CALCULATE ( MAXX ( Financials_origem, VALUE ( Financials_origem[ Sales] ) ) ),
+        "Min_Valor_Vendas", CALCULATE ( MINX ( Financials_origem, VALUE ( Financials_origem[ Sales] ) ) )
+    )
+
+D_Produtos_Detalhes =
+DISTINCT (
+    SELECTCOLUMNS (
+        Financials_origem,
+        "ID_Produto_Detalhe", COMBINEVALUES ( "|", Financials_origem[Product], Financials_origem[Discount Band], Financials_origem[Sale Price], Financials_origem[Manufacturing Price], Financials_origem[Units Sold] ),
+        "ID_Produto", SWITCH ( Financials_origem[Product], "Amarilla", 1, "Carretera", 2, "Montana", 3, "Paseo", 4, "Velo", 5, "VTT", 6 ),
+        "Produto", Financials_origem[Product],
+        "Discount_Band", Financials_origem[Discount Band],
+        "Sale_Price", VALUE ( Financials_origem[Sale Price] ),
+        "Units_Sold", VALUE ( Financials_origem[Units Sold] ),
+        "Manufacturing_Price", VALUE ( Financials_origem[Manufacturing Price] )
+    )
+)
+
+D_Descontos =
+DISTINCT (
+    SELECTCOLUMNS (
+        Financials_origem,
+        "ID_Desconto", COMBINEVALUES ( "|", Financials_origem[Product], Financials_origem[Discount Band], Financials_origem[Discounts] ),
+        "ID_Produto", SWITCH ( Financials_origem[Product], "Amarilla", 1, "Carretera", 2, "Montana", 3, "Paseo", 4, "Velo", 5, "VTT", 6 ),
+        "Produto", Financials_origem[Product],
+        "Discount", VALUE ( Financials_origem[Discounts] ),
+        "Discount_Band", Financials_origem[Discount Band]
+    )
+)
+
+D_Detalhes =
+DISTINCT (
+    SELECTCOLUMNS (
+        Financials_origem,
+        "ID_Detalhe", COMBINEVALUES ( "|", Financials_origem[Segment], Financials_origem[Country] ),
+        "Segment", Financials_origem[Segment],
+        "Country", Financials_origem[Country]
+    )
+)
+
+F_Vendas =
+SELECTCOLUMNS (
+    Financials_origem,
+    "SK_ID", COMBINEVALUES ( "|", FORMAT ( Financials_origem[Date], "yyyymmdd" ), Financials_origem[Product], Financials_origem[Country], Financials_origem[Segment], Financials_origem[Units Sold], Financials_origem[ Sales], Financials_origem[Profit], Financials_origem[Discount Band] ),
+    "ID_Produto", SWITCH ( Financials_origem[Product], "Amarilla", 1, "Carretera", 2, "Montana", 3, "Paseo", 4, "Velo", 5, "VTT", 6 ),
+    "ID_Produto_Detalhe", COMBINEVALUES ( "|", Financials_origem[Product], Financials_origem[Discount Band], Financials_origem[Sale Price], Financials_origem[Manufacturing Price], Financials_origem[Units Sold] ),
+    "ID_Desconto", COMBINEVALUES ( "|", Financials_origem[Product], Financials_origem[Discount Band], Financials_origem[Discounts] ),
+    "ID_Detalhe", COMBINEVALUES ( "|", Financials_origem[Segment], Financials_origem[Country] ),
+    "Produto", Financials_origem[Product],
+    "Units_Sold", VALUE ( Financials_origem[Units Sold] ),
+    "Sale_Price", VALUE ( Financials_origem[Sale Price] ),
+    "Discount_Band", Financials_origem[Discount Band],
+    "Segment", Financials_origem[Segment],
+    "Country", Financials_origem[Country],
+    "Sales", VALUE ( Financials_origem[ Sales] ),
+    "Profit", VALUE ( Financials_origem[Profit] ),
+    "Date", Financials_origem[Date],
+    "Month_Number", VALUE ( Financials_origem[Month Number] ),
+    "Month_Name", Financials_origem[Month Name],
+    "Year", VALUE ( Financials_origem[Year] )
+)

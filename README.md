@@ -2,6 +2,7 @@
 
 | Entrega | Conteúdo |
 |---|---|
+| [Modelagem e transformação de dados com DAX — Power BI](projetos/power-bi/modelagem-dax-financials/) | Star schema da amostra Financials, tabelas calculadas em DAX, relacionamentos 1:N, PBIX, consultas M e validação dos dados. |
 | [Star schema de professores — Power BI](projetos/power-bi/star-schema-professores/) | Modelo dimensional com uma tabela fato, cinco dimensões, relacionamentos 1:N, arquivo PBIX, dados de exemplo, SQL, DAX e documentação. |
 | [Processamento e transformação de dados — MySQL e Power BI](projetos/power-bi/processamento-dados-company/) | SQL corrigido, transformações no Power Query, checagens de qualidade, relatório publicado e base auditável. |
 | [Relatório gerencial de vendas — Power BI](projetos/power-bi/relatorio-gerencial-vendas/) | Duas páginas, indicadores, troca de visuais, navegação, relatório PBIX e base Financials. |

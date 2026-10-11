@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <style>
+      .page-title { font: 700 34px Arial, sans-serif; fill: #17324D; }
+      .subtitle { font: 400 18px Arial, sans-serif; fill: #5B6670; }
+      .title { font: 700 20px Arial, sans-serif; fill: #FFFFFF; }
+      .row { font: 400 17px Arial, sans-serif; fill: #263238; }
+      .rel { font: 700 15px Arial, sans-serif; fill: #EE6C4D; }
+      .note { font: 400 15px Arial, sans-serif; fill: #5B6670; }
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L8,3 z" fill="#EE6C4D"/>
+    </marker>
+  </defs>
+  <rect width="1600" height="900" fill="#F7FAFC"/>
+  <text x="70" y="65" class="page-title">Modelo dimensional de vendas</text>
+  <text x="70" y="98" class="subtitle">Financial Sample · 700 vendas · relacionamentos 1:* com filtro em uma direção</text>
+  <line x1="430" y1="252" x2="620" y2="440" stroke="#EE6C4D" stroke-width="4" marker-end="url(#arrow)"/><line x1="430" y1="657" x2="620" y2="535" stroke="#EE6C4D" stroke-width="4" marker-end="url(#arrow)"/><line x1="1170" y1="252" x2="980" y2="440" stroke="#EE6C4D" stroke-width="4" marker-end="url(#arrow)"/><line x1="1170" y1="657" x2="980" y2="535" stroke="#EE6C4D" stroke-width="4" marker-end="url(#arrow)"/><line x1="800" y1="275" x2="800" y2="315" stroke="#EE6C4D" stroke-width="4" marker-end="url(#arrow)"/>
+  <rect x="70" y="192" width="360" height="163" rx="12" fill="#FFFFFF" stroke="#C9D6DF" stroke-width="2"/><rect x="70" y="150" width="360" height="54" rx="12" fill="#2A6F97"/><text x="92" y="185" class="title">D_Produtos</text><text x="94" y="236" class="row">ID_Produto (PK)</text><text x="94" y="270" class="row">Produto</text><text x="94" y="304" class="row">Média e mediana de venda</text><text x="94" y="338" class="row">Mínimo e máximo de venda</text><rect x="70" y="597" width="360" height="163" rx="12" fill="#FFFFFF" stroke="#C9D6DF" stroke-width="2"/><rect x="70" y="555" width="360" height="54" rx="12" fill="#2A6F97"/><text x="92" y="590" class="title">D_Produtos_Detalhes</text><text x="94" y="641" class="row">ID_Produto_Detalhe (PK)</text><text x="94" y="675" class="row">ID_Produto</text><text x="94" y="709" class="row">Discount Band / Sale Price</text><text x="94" y="743" class="row">Units Sold / Manufacturing Price</text><rect x="1170" y="192" width="360" height="163" rx="12" fill="#FFFFFF" stroke="#C9D6DF" stroke-width="2"/><rect x="1170" y="150" width="360" height="54" rx="12" fill="#2A6F97"/><text x="1192" y="185" class="title">D_Descontos</text><text x="1194" y="236" class="row">ID_Desconto (PK)</text><text x="1194" y="270" class="row">ID_Produto</text><text x="1194" y="304" class="row">Discount</text><text x="1194" y="338" class="row">Discount Band</text><rect x="1170" y="597" width="360" height="163" rx="12" fill="#FFFFFF" stroke="#C9D6DF" stroke-width="2"/><rect x="1170" y="555" width="360" height="54" rx="12" fill="#2A6F97"/><text x="1192" y="590" class="title">D_Detalhes</text><text x="1194" y="641" class="row">ID_Detalhe (PK)</text><text x="1194" y="675" class="row">Segment</text><text x="1194" y="709" class="row">Country</text><text x="1194" y="743" class="row">25 combinações</text><rect x="620" y="112" width="360" height="163" rx="12" fill="#FFFFFF" stroke="#C9D6DF" stroke-width="2"/><rect x="620" y="70" width="360" height="54" rx="12" fill="#2A6F97"/><text x="642" y="105" class="title">D_Calendario</text><text x="644" y="156" class="row">Date (PK)</text><text x="644" y="190" class="row">Ano / Mês / Ano_Mês</text><text x="644" y="224" class="row">Trimestre / Dia</text><text x="644" y="258" class="row">Criada com CALENDAR()</text><rect x="620" y="357" width="360" height="308" rx="12" fill="#FFFFFF" stroke="#C9D6DF" stroke-width="2"/><rect x="620" y="315" width="360" height="54" rx="12" fill="#17324D"/><text x="642" y="350" class="title">F_Vendas</text><text x="644" y="401" class="row">SK_ID (PK)</text><text x="644" y="435" class="row">ID_Produto (FK)</text><text x="644" y="469" class="row">ID_Produto_Detalhe (FK)</text><text x="644" y="503" class="row">ID_Desconto (FK)</text><text x="644" y="537" class="row">ID_Detalhe (FK)</text><text x="644" y="571" class="row">Date (FK)</text><text x="644" y="605" class="row">Sales / Profit / Units Sold</text>
+  <text x="455" y="390" class="rel">1</text><text x="585" y="430" class="rel">*</text>
+  <text x="455" y="635" class="rel">1</text><text x="585" y="545" class="rel">*</text>
+  <text x="1135" y="390" class="rel">1</text><text x="1000" y="430" class="rel">*</text>
+  <text x="1135" y="635" class="rel">1</text><text x="1000" y="545" class="rel">*</text>
+  <text x="815" y="292" class="rel">1</text><text x="815" y="314" class="rel">*</text>
+  <rect x="70" y="810" width="1460" height="48" rx="10" fill="#FFF1E6"/>
+  <text x="92" y="841" class="note">Financials_origem fica oculta como backup. As dimensões usam chaves próprias para evitar muitos-para-muitos.</text>
+</svg>

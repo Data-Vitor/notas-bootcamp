@@ -1,0 +1,13 @@
+D_Calendario =
+VAR DataInicial = MIN ( F_Vendas[Date] )
+VAR DataFinal = MAX ( F_Vendas[Date] )
+RETURN
+    ADDCOLUMNS (
+        CALENDAR ( DataInicial, DataFinal ),
+        "Ano", YEAR ( [Date] ),
+        "Mes_Numero", MONTH ( [Date] ),
+        "Mes", FORMAT ( [Date], "mmmm" ),
+        "Ano_Mes", FORMAT ( [Date], "yyyy-MM" ),
+        "Trimestre", "T" & FORMAT ( [Date], "Q" ),
+        "Dia", DAY ( [Date] )
+    )
