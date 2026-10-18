@@ -11,6 +11,7 @@
 | [Relatório estatístico com foco em experiência do usuário (Power BI)](projetos/power-bi/relatorio-estatistico-ux/) | Três páginas com média, mediana, desvio padrão, gráfico de controle, Z-score, correlação e tendência, navegação com estados, medidas DAX, PBIX e validação. |
 | [Simulador de fundos imobiliários (Excel)](projetos/excel/simulador-fundos-imobiliarios/) | VF, cenários de 2 a 30 anos, intervalos nomeados, PROCV com chave composta, lista de perfis, gráfico de pizza e validação. |
 | [Controle de dados para o Imposto de Renda (Excel)](projetos/excel/controle-imposto-de-renda/) | Menu de navegação, cadastro do titular, informes e notas com validação, resumo com gráficos e abas protegidas, com dados fictícios. |
+| [Dashboard de vendas do Game Pass (Excel)](projetos/excel/dashboard-vendas-game-pass/) | Base de 295 assinaturas, filtros de plano e tipo, indicadores, seis gráficos, fórmulas com intervalos nomeados e perguntas de negócio. |
 | [Caderno temático — NotebookLM](#ferramentas-estatísticas-para-trabalhar-com-dados-de-verdade-guia-de-fundamentos) | Curadoria de fontes, prompts e guia de fundamentos estatísticos, documentados abaixo. |
 
 ---
