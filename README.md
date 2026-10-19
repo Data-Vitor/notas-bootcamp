@@ -12,6 +12,7 @@
 | [Simulador de fundos imobiliários (Excel)](projetos/excel/simulador-fundos-imobiliarios/) | VF, cenários de 2 a 30 anos, intervalos nomeados, PROCV com chave composta, lista de perfis, gráfico de pizza e validação. |
 | [Controle de dados para o Imposto de Renda (Excel)](projetos/excel/controle-imposto-de-renda/) | Menu de navegação, cadastro do titular, informes e notas com validação, resumo com gráficos e abas protegidas, com dados fictícios. |
 | [Dashboard de vendas do Game Pass (Excel)](projetos/excel/dashboard-vendas-game-pass/) | Base de 295 assinaturas, filtros de plano e tipo, indicadores, seis gráficos, fórmulas com intervalos nomeados e perguntas de negócio. |
+| [Dashboard de vendas da Porsche (HTML)](projetos/excel/dashboard-vendas-porsche/) | Dashboard em HTML único com 100 vendas embutidas, três perguntas de negócio, cinco filtros e indicadores de topo, publicada no GitHub Pages. |
 | [Caderno temático — NotebookLM](#ferramentas-estatísticas-para-trabalhar-com-dados-de-verdade-guia-de-fundamentos) | Curadoria de fontes, prompts e guia de fundamentos estatísticos, documentados abaixo. |
 
 ---
