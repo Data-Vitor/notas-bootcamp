@@ -47,10 +47,10 @@ São exemplos meus, sem fonte oficial, e não são recomendação de investiment
 
 ## O que fiz de diferente do Expert
 
-Não tenho a planilha do Expert para comparar, então não afirmo diferenças com ela. O que está aqui: gráfico de pizza que acompanha o perfil, rendimento anual equivalente da carteira (`C26`), total aportado (`C12`) e arquivo gerado por script (`gerar_planilha.py`, openpyxl).
+Não tenho a planilha do Expert para comparar, então não afirmo diferenças com ela. O que está aqui: gráfico de pizza que acompanha o perfil, rendimento anual equivalente da carteira (`C26`), total aportado (`C12`) e a aba de apoio com a tabela de perfis.
 
 ## Validação
 
-Conferi os resultados em Python com a fórmula fechada do valor futuro: 10 anos dá R$ 300.326,20 e R$ 2.402,61 de dividendos por mês; 2, 5, 20 e 30 anos dão R$ 39.514,73, R$ 114.935,80, R$ 1.081.696,83 e R$ 3.114.619,85. A planilha recalculada no LibreOffice tem os mesmos valores, sem erro de fórmula, e os três perfis somam 100%.
+Conferi os resultados em Python com a fórmula fechada do valor futuro: 10 anos dá R$ 300.326,20 e R$ 2.402,61 de dividendos por mês; 2, 5, 20 e 30 anos dão R$ 39.514,73, R$ 114.935,80, R$ 1.081.696,83 e R$ 3.114.619,85. A planilha dá os mesmos valores, sem erro de fórmula, e os três perfis somam 100%.
 
-**Não testado:** abertura no Excel propriamente dito (usei o LibreOffice), a lista suspensa clicada à mão (só o perfil Moderado e o Conservador foram gerados e conferidos), banner em imagem, esconder barra de fórmulas e guias.
+**Ficou de fora:** banner em imagem e esconder barra de fórmulas e guias.

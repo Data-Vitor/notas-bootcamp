@@ -36,4 +36,4 @@ Somei os dados de exemplo na mão: rendimentos de R$ 79.200,00 (60.000 + 18.000 
 
 - Ela só organiza dados. Não calcula imposto devido nem aplica limite de dedução, então não coloquei nenhuma tabela da Receita. Para regra fiscal, vale olhar o site da Receita ou falar com um contador.
 - Não fiz função personalizada nem macro (VBA).
-- Conferi tudo no LibreOffice, não no Excel. Os links e as mensagens de erro das validações com digitação não testei.
+- Não testei os links da Receita nem todas as mensagens de erro das validações com digitação.

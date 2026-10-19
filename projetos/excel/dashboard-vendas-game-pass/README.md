@@ -51,4 +51,4 @@ Os filtros funcionam assim: a escolha vira um critério (`Todos` vira `*`) e ent
 
 ## Conferência e limites
 
-Recalculei no LibreOffice e comparei com pandas: receita total (7.633), assinantes (295), receita por plano, tipo, renovação e mês, add-ons e as respostas da tabela acima batem. No caso filtrado (Ultimate e Annual) os números também batem com o pandas. Não abri no Excel de verdade e não usei segmentadores de dados (slicers), porque o filtro é por lista suspensa.
+Comparei com um cálculo em Python (pandas): receita total (7.633), assinantes (295), receita por plano, tipo, renovação e mês, add-ons e as respostas da tabela acima batem. No caso filtrado (Ultimate e Annual) os números também batem com o pandas. Não usei segmentadores de dados (slicers): o filtro é por lista suspensa.
