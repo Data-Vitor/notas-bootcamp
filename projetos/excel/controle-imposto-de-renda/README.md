@@ -30,7 +30,7 @@ Células brancas são para preencher. As azuladas são calculadas e ficam proteg
 
 ## Conferência
 
-Somei os dados de exemplo na mão: rendimentos de R$ 79.200,00 (60.000 + 18.000 + 1.200), imposto retido de R$ 4.200,00 e despesas de R$ 9.500,00 (saúde 6.000 e educação 3.500). O resumo mostra os mesmos valores e a planilha recalculada não deu erro de fórmula.
+Somei os dados de exemplo na mão: rendimentos de R$ 79.200,00 (60.000 + 18.000 + 1.200), imposto retido de R$ 4.200,00 e despesas de R$ 9.500,00 (saúde 6.000 e educação 3.500). Abri o arquivo no Excel, recalculei tudo: o resumo mostra os mesmos valores e não há erro de fórmula em nenhuma aba. As imagens desta pasta são prints do próprio Excel.
 
 ## O que ficou de fora ou sem testar
 

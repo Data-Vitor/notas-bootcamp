@@ -51,6 +51,6 @@ Não tenho a planilha do Expert para comparar, então não afirmo diferenças co
 
 ## Validação
 
-Conferi os resultados em Python com a fórmula fechada do valor futuro: 10 anos dá R$ 300.326,20 e R$ 2.402,61 de dividendos por mês; 2, 5, 20 e 30 anos dão R$ 39.514,73, R$ 114.935,80, R$ 1.081.696,83 e R$ 3.114.619,85. A planilha dá os mesmos valores, sem erro de fórmula, e os três perfis somam 100%.
+Conferi os resultados em Python com a fórmula fechada do valor futuro: 10 anos dá R$ 300.326,20 e R$ 2.402,61 de dividendos por mês; 2, 5, 20 e 30 anos dão R$ 39.514,73, R$ 114.935,80, R$ 1.081.696,83 e R$ 3.114.619,85. Abri a planilha no Excel e recalculei: dá os mesmos valores, sem erro de fórmula, e os três perfis somam 100%. As imagens são prints do Excel, com o perfil Moderado e o Conservador.
 
 **Ficou de fora:** banner em imagem e esconder barra de fórmulas e guias.

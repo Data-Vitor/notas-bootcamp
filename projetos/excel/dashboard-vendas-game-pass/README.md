@@ -51,4 +51,4 @@ Os filtros funcionam assim: a escolha vira um critério (`Todos` vira `*`) e ent
 
 ## Conferência e limites
 
-Comparei com um cálculo em Python (pandas): receita total (7.633), assinantes (295), receita por plano, tipo, renovação e mês, add-ons e as respostas da tabela acima batem. No caso filtrado (Ultimate e Annual) os números também batem com o pandas. Não usei segmentadores de dados (slicers): o filtro é por lista suspensa.
+Comparei com um cálculo em Python (pandas): receita total (7.633), assinantes (295), receita por plano, tipo, renovação e mês, add-ons e as respostas da tabela acima batem. No caso filtrado (Ultimate e Annual) os números também batem com o pandas. Abri o arquivo no Excel e recalculei: sem erro de fórmula, 6 gráficos e os mesmos números (7.633, 295 e 25,87 de ticket médio; no filtro Ultimate e Annual, 1.186, 20 e 59,30). As imagens são prints do Excel. Não usei segmentadores de dados (slicers): o filtro é por lista suspensa.
